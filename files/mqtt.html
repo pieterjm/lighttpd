@@ -1,6 +1,6 @@
 <script src="js/mqttws31.js"></script>
 <script>
-client = new Messaging.Client(location.hostname, location.port ? location.port : 80, "clientId");
+client = new Messaging.Client(location.hostname, 81, "clientId");
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 client.connect({onSuccess:onConnect});
